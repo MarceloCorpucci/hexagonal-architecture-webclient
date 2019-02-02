@@ -1,4 +1,4 @@
-package hexagonal.architecture.webclient;
+package hexagonal.architecture.webclient.pageobject;
 
 import hexagonal.architecture.sample.framework.WebAdapter;
 
