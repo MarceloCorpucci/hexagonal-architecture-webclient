@@ -14,8 +14,7 @@ public class LoginPageObject {
 		return this;
 	}
 	
-//	public void login(String email, String pass) {
-//		driver.open(email);
-//		return new HomePageObject(driver);
-//	}
+	public void login(String email, String pass) {
+//		webAdapter.on(sslicePoint);
+	}
 }

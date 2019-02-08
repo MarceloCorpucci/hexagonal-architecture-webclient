@@ -1,7 +1,5 @@
 package hexagonal.architecture.webclient.test;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,16 +19,15 @@ public class TestCreateEntry  {
 		SUTManager webManager = new WebManager();
 		SUTClient sutClient = webManager.useApplication("CHROME");
 		webAdapter = new WebAdapter(sutClient);
-		
 	}
 	
 	@Test
 	public void postIsSuccessfull() {
 		loginPage = new LoginPageObject(webAdapter);
 		loginPage.load("http://www.google.com");
-//		
+		
 //		String currentMessage = loginPage
-//									.login("admin1@gmail.com", "admin1")
+//									.login("admin1@gmail.com", "admin1");
 //									.goToCreateEntry()
 //									.createEntry("My newest post", "This is a post.")
 //									.getResultMessage();
