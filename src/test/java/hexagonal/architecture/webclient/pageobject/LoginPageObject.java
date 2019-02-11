@@ -26,5 +26,11 @@ public class LoginPageObject {
 			.whichRepresents("ID")
 			.then()
 			.addText(pass);
+		
+		webAdapter
+			.search("btn-submit")
+			.whichRepresents("ID")
+			.then()
+			.select();
 	}
 }
