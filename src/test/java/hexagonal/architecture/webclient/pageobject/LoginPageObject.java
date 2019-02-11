@@ -4,7 +4,7 @@ import hexagonal.architecture.sample.framework.WebAdapter;
 
 public class LoginPageObject {
 	private WebAdapter webAdapter;
-	
+
 	public LoginPageObject(WebAdapter webAdapter) {
 		this.webAdapter = webAdapter;
 	}
@@ -15,6 +15,16 @@ public class LoginPageObject {
 	}
 	
 	public void login(String email, String pass) {
-//		webAdapter.on(sslicePoint);
+		webAdapter
+			.search("email")
+			.whichRepresents("ID")
+			.then()
+			.addText(email);
+		
+		webAdapter
+			.search("password")
+			.whichRepresents("ID")
+			.then()
+			.addText(pass);
 	}
 }

@@ -24,7 +24,8 @@ public class TestCreateEntry  {
 	@Test
 	public void postIsSuccessfull() {
 		loginPage = new LoginPageObject(webAdapter);
-		loginPage.load("http://www.google.com");
+		loginPage.load("localhost:5000/login");
+		loginPage.login("admin1@gmail.com", "pass");
 		
 //		String currentMessage = loginPage
 //									.login("admin1@gmail.com", "admin1");
